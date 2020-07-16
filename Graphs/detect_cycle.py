@@ -16,24 +16,22 @@ class Graph:
     ## recursive solution without stack
     def DFS_Util(self, v):
 
-        print (v)
         self.visited[v] = True
 
         for u in self.adj_list[v]:
-            if not self.visited[u]:
+            if self.visited[u]:
+                return True
+            else:
                 self.DFS_Util(u)
 
-
-    def DFS(self, start_node):
+    def detectCycle(self):
 
         # following is for all the nodes
-        # for node in range(self.V):
-        #     if not self.visited[node]:
-        #         self.DFS_Util(node)
-
-        if not self.visited[start_node]:
-            self.DFS_Util(start_node)
-
+        for node in range(self.V):
+            if not self.visited[node]:
+                if self.DFS_Util(node):
+                    return True
+        return False
 
 
 if __name__ == "__main__":
@@ -44,5 +42,10 @@ if __name__ == "__main__":
     g.addEdge(2, 0)
     g.addEdge(2, 3)
     g.addEdge(3, 3)
+    print(g.detectCycle())  # has cycle
 
-    g.DFS(2)
+    g = Graph(4)
+    g.addEdge(0, 1)
+    g.addEdge(0, 2)
+    g.addEdge(2, 3)
+    print(g.detectCycle())  # has no cycle
