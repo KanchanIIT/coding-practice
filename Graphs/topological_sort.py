@@ -32,7 +32,7 @@ class Graph:
         self.finish.append(v)
 
 
-    def DFS(self, start_node):
+    def topologicalSort(self):
 
         # following is for all the nodes
         for node in range(self.V):
@@ -44,15 +44,15 @@ class Graph:
             print(i)
 
 
-
-
 if __name__ == "__main__":
-    g = Graph(4)
-    g.addEdge(0, 1)
-    g.addEdge(0, 2)
-    g.addEdge(1, 2)
-    g.addEdge(2, 0)
+    g = Graph(6)
+    g.addEdge(5, 2)
+    g.addEdge(5, 0)
+    g.addEdge(4, 0)
+    g.addEdge(4, 1)
     g.addEdge(2, 3)
-    g.addEdge(3, 3)
+    g.addEdge(3, 1)
 
-    g.DFS(2)
+    g.topologicalSort()
+
+    # actual ans: 5 4 2 3 1 0
