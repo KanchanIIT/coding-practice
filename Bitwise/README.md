@@ -3,7 +3,9 @@
 >> problem: find number of 1's in an integer number.
 
 >> ~ is for complement. ~12 = -13 (because of 2's complement - if represented in 8 bit numbers)
-> 
+
+>> ^ is bitwise xor operation 
+>
 - ## Bitwise operations
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
         - [ ] Good intro: https://wiki.python.org/moin/BitwiseOperators
