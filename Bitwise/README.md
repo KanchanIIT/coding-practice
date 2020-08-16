@@ -5,7 +5,7 @@
 >> ~ is for complement. ~12 = -13 (because of 2's complement - if represented in 8 bit numbers)
 
 >> ^ is bitwise xor operation 
->
+- [x] [BEST - Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)
 - ## Bitwise operations
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
         - [ ] Good intro: https://wiki.python.org/moin/BitwiseOperators
