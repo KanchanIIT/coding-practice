@@ -6,10 +6,10 @@ https://docs.google.com/document/d/1jmANmwA5YVdzMtkSwyc5jrk1p5ZRjq0hvtktJe_ke_8/
 > 1. Travelling Sales Man Problem
 > 2. Knight Tour
 > 3. Hamintonian Path/Cycle
-
+ 
 - ## Bitwise operations
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
-        - [ ] Good intro:
+        - [ ] Good intro: https://wiki.python.org/moin/BitwiseOperators
             [Bit Manipulation (video)](https://www.youtube.com/watch?v=7jkIUgLC29I)
         - [ ] [C Programming Tutorial 2-10: Bitwise Operators (video)](https://www.youtube.com/watch?v=d0AwjSpNXR0)
         - [ ] [Bit Manipulation](https://en.wikipedia.org/wiki/Bit_manipulation)
