@@ -30,7 +30,13 @@ class Heap:
         for i in range(math.floor(len(self.stones) / 2), -1, -1):
             self.heapify(i)
 
-
+    def heap_sort(self):
+        while self.size > 1:
+            temp = self.stones[0]
+            self.stones[0] = self.stones[self.size - 1]
+            self.stones[self.size - 1] = temp
+            self.size = self.size - 1
+            self.heapify(0)
 
 
 
@@ -38,5 +44,6 @@ if __name__ == "__main__":
     nums = [1, 4, 20, 3, 10, 5, 33, 0]
     hp = Heap()
     hp.lastStoneWeight(nums)
+    hp.heap_sort()
     print (hp.stones)
     # ans [[2, 4], [6, 6], [6, 7]]
